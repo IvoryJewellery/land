@@ -22,7 +22,7 @@ class Subscribe extends Component {
     render() {
         const { placeholder, buttonText } = this.props;
         return (
-            <form className="subscribe" onSubmit={this.handleSubmit}>
+            <form className="subscribe" data-netlify="true" onSubmit={this.handleSubmit}>
                 <input className="subscribe-email" name="email" type="email"
                 placeholder={placeholder}
                 onChange={this.handleChange}
