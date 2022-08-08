@@ -1,0 +1,29 @@
+.background {
+  display:grid;
+  grid-gap:10px;
+  grid-template-columns:1fr;
+  grid-template-rows: auto auto 50px 100px;
+  grid-template-areas: 
+  "logo"
+  "video"
+  "title"
+  "countdown"
+  
+  "subscribe"
+  "social";
+  justify-items: center;
+  align-items: center;
+  color: var(--offwhite);
+}
+
+.logo {
+  grid-area: logo;
+  height: 90px;
+  margin-top:10px;
+}
+
+.video {
+  height:400px;
+  width:400px;
+  grid-area:video;
+}

@@ -1,0 +1,40 @@
+.social-links{
+    margin-top:25px;
+    grid-area: social;
+    align-self: end;
+    display:grid;
+    grid-auto-flow:column;
+    grid-template-columns: repeat(auto-fit,minmax(50px,1fr));
+    justify-items:center;
+    grid-gap:30px;
+}
+
+.social-link:hover {
+    filter: brightness(60%);
+    text-decoration: underline;
+}
+.social-link {
+    color: var(--offwhite);
+    grid-column:minmax(50px,1fr);
+    display:grid;
+    font-weight:500;
+    grid-gap:10px;
+    justify-items:center;
+    text-decoration:none;
+    transition: all 0.3s ease-in;
+    position:relative;
+    
+}
+
+object {
+    pointer-events:none;
+}
+
+.social-logo {
+    width:65px;
+}
+.social-text {
+    font-size:16px;
+    margin-top:-10px;
+}
+
